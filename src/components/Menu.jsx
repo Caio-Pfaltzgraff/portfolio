@@ -22,9 +22,9 @@ export function Menu() {
 
           <div className="flex items-center justify-between">
             <div>
-              <h2 className='text-light-100 font-title font-semibold text-2xl'>
+              <Link to="/" className='text-light-100 font-title font-semibold text-2xl'>
                 Port<span className='text-orange-700'>folio</span>
-              </h2>
+              </Link>
             </div>
             <div className="hidden md:flex items-center gap-4">
               <Link to="/" className={`nav-link ${location.pathname === '/' ? 'border-b-2 border-orange-700' : ''}`}>Início</Link>

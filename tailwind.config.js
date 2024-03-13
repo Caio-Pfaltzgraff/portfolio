@@ -20,7 +20,10 @@ export default {
         azul: {
           escuro: '#051933',
           claro: '#01A5B1'
-        }
+        },
+        linkedin: '#0077B5',
+        whatsapp: '#25D366',
+        gmail: '#DB4437',
       },
       fontFamily: {
         "default": ['Inter', 'sans-serif'],
