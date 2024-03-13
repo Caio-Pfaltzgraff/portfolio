@@ -7,3 +7,17 @@
     @apply font-default
   }
 }
+
+@layer components {
+  .padding-page {
+    @apply px-3 sm:px-5 md:px-8 lg:px-10 xl:px-16 2xl:px-24
+  }
+
+  .nav-link {
+    @apply text-light-100 font-semibold
+  }
+
+  .nav-link-mobile {
+    @apply text-light-100 font-semibold text-xl text-center block
+  }
+}

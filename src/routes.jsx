@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import App from './App'
 import { DefaultPage } from './components/DefaultPage'
 import { Menu } from './components/Menu'
 import { ScrollToTop } from './components/ScrollToTop'
+import { Start } from './pages/Start'
 
 export function AppRoutes() {
   return (
@@ -11,7 +11,7 @@ export function AppRoutes() {
       <Menu />
       <Routes>
         <Route path='/' element={<DefaultPage />}>
-          <Route index element={<App />} />
+          <Route index element={<Start />} />
         </Route>
       </Routes>
     </BrowserRouter>
