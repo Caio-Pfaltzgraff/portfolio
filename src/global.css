@@ -20,4 +20,5 @@
   .nav-link-mobile {
     @apply text-light-100 font-semibold text-xl text-center block
   }
+  
 }

@@ -19,7 +19,7 @@ export default {
         cinza: '#AABCD0',
         azul: {
           escuro: '#051933',
-          claro: '#01A5B1'
+          claro: '#0f233d'
         },
         linkedin: '#0077B5',
         whatsapp: '#25D366',
