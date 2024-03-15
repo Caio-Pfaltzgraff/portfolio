@@ -123,7 +123,7 @@ export function Start() {
         </div>
       </section>
       <section className='padding-page bg-light-100 dark:bg-dark-200'>
-        
+        a
       </section>
     </article>
   );

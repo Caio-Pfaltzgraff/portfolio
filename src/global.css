@@ -20,5 +20,13 @@
   .nav-link-mobile {
     @apply text-light-100 font-semibold text-xl text-center block
   }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-spin-one {
+    animation: spin 1s ease-in-out fowards;
+  }
   
 }
