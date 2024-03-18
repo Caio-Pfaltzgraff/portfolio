@@ -3,6 +3,7 @@ import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import photo from "../assets/my-photo.png";
 import photo2 from "../assets/my-photo2.png";
+import skills from '../data/skills.json';
 
 export function Start() {
   return (
@@ -46,7 +47,7 @@ export function Start() {
                   target="_blank"
                   className="hover:animate-bounce"
                 >
-                  <FaGithub className="h-10 lg:h-12 w-auto" />
+                  <FaGithub className="h-10 lg:h-12 w-auto hover:text-github" />
                 </a>
                 <a
                   href="mailto:caio.rllcr@gmail.com"
@@ -123,7 +124,24 @@ export function Start() {
         </div>
       </section>
       <section className='padding-page bg-light-100 dark:bg-dark-200'>
-        a
+        <div className='py-10 md:py-12 lg:py-14'>
+          <div className="text-center pb-10 md:pb-12 lg:pb-14">
+            <h2 className="text-3xl font-title font-bold dark:text-light-100">
+              Habilidades
+            </h2>
+          </div>
+          <div className='flex justify-center'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 gap-y-10 justify-center border-2 border-gray-400 dark:border-[#3f3f3f] rounded-xl px-4 md:px-6 py-10 sm:py-10  box-border max-w-2xl lg:max-w-4xl xl:max-w-5xl'>
+              {skills.map( skill => (
+                <div className='flex flex-col justify-center gap-4 items-center dark:text-light-200' key={skill.name}>
+                  <img src={skill.icon} alt={skill.name} className='aspect-square max-w-16 max-h-16 hover:-translate-y-2 duration-500'/>
+                  <p className='text-center font-developer font-semibold text-lg'>{skill.name}</p>
+                  <p className='text-gray-700 dark:text-gray-400 font-medium'>{skill.level}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
     </article>
   );

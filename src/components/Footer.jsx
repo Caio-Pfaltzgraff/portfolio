@@ -7,9 +7,9 @@ export function Footer() {
   return (
     <footer className="bg-azul-escuro dark:bg-dark-100">
       <div className="padding-page flex flex-col gap-4 sm:flex-row sm:justify-between items-center py-4 xl:py-5 text-light-200">
-        <div className="flex gap-2 text-3xl ">
+        <div className="flex gap-4 lg:gap-6 text-3xl ">
           <FaLinkedin className="hover:text-linkedin cursor-pointer"/>
-          <FaGithub className="cursor-pointer"/>
+          <FaGithub className="hover:text-github cursor-pointer"/>
           <BiLogoGmail className="hover:text-gmail cursor-pointer"/>
           <FaWhatsapp className="hover:text-whatsapp cursor-pointer"/>
         </div>

@@ -24,6 +24,7 @@ export default {
         linkedin: '#0077B5',
         whatsapp: '#25D366',
         gmail: '#DB4437',
+        github: '#5c6bc0'
       },
       fontFamily: {
         "default": ['Inter', 'sans-serif'],

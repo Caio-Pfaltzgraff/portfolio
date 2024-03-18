@@ -1,0 +1,92 @@
+[
+  {
+    "icon": "/src/assets/icons/java-icon.png",
+    "name": "Java",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/javascript-icon.png",
+    "name": "Javascript",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/typescript-icon.png",
+    "name": "TypeScript",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/spring-icon.png",
+    "name": "Spring Boot",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/react-icon.png",
+    "name": "React",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/src/assets/icons/node-icon.png",
+    "name": "Node.JS",
+    "level": "Básico"
+  },
+  {
+    "icon": "/src/assets/icons/docker-icon.png",
+    "name": "Docker",
+    "level": "Básico"
+  },
+  {
+    "icon": "/src/assets/icons/git-icon.png",
+    "name": "Git",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/src/assets/icons/postges-icon.png",
+    "name": "Postgres",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/mysql-icon.png",
+    "name": "MySQL",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/html-icon.png",
+    "name": "HTML",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/tailwind-icon.png",
+    "name": "Tailwind",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/styled-components-icon.png",
+    "name": "Styled Components",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/src/assets/icons/bootstrap-icon.png",
+    "name": "Bootstrap",
+    "level": "Avançado"
+  },
+  {
+    "icon": "/src/assets/icons/sass-icon.png",
+    "name": "Sass",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/src/assets/icons/power-automate-icon.png",
+    "name": "Power Automate",
+    "level": "Básico"
+  },
+  {
+    "icon": "/src/assets/icons/office-icon.png",
+    "name": "Pacote Office",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/src/assets/icons/google-ads-icon.png",
+    "name": "Google ADS",
+    "level": "Intermediário"
+  }
+]
