@@ -38,28 +38,28 @@ export function Start() {
                 <a
                   href="https://www.linkedin.com/in/caio-pfaltzgraff/"
                   target="_blank"
-                  className="hover:animate-bounce"
+                  className="hover:-translate-y-4 duration-500 ease-in"
                 >
                   <FaLinkedin className="h-10 lg:h-12 w-auto hover:text-linkedin" />
                 </a>
                 <a
                   href="https://github.com/Caio-Pfaltzgraff"
                   target="_blank"
-                  className="hover:animate-bounce"
+                  className="hover:-translate-y-4 duration-500 ease-in"
                 >
                   <FaGithub className="h-10 lg:h-12 w-auto hover:text-github" />
                 </a>
                 <a
                   href="mailto:caio.rllcr@gmail.com"
                   target="_blank"
-                  className="hover:animate-bounce"
+                  className="hover:-translate-y-4 duration-500 ease-in"
                 >
                   <BiLogoGmail className="h-10 lg:h-12 w-auto hover:text-gmail" />
                 </a>
                 <a
                   href="https://wa.me/5521980891793"
                   target="_blank"
-                  className="hover:animate-bounce"
+                  className="hover:-translate-y-4 duration-500 ease-in"
                 >
                   <FaWhatsapp className="h-10 lg:h-12 w-auto hover:text-whatsapp" />
                 </a>
@@ -131,7 +131,7 @@ export function Start() {
             </h2>
           </div>
           <div className='flex justify-center'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 gap-y-10 justify-center border-2 border-gray-400 dark:border-[#3f3f3f] rounded-xl px-4 md:px-6 py-10 sm:py-10  box-border max-w-2xl lg:max-w-4xl xl:max-w-5xl'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 gap-y-10 justify-center border-2 border-gray-400 dark:border-[#3f3f3f] rounded-xl px-4 md:px-6 py-10 sm:py-10 box-border max-w-2xl lg:max-w-4xl xl:max-w-5xl'>
               {skills.map( skill => (
                 <div className='flex flex-col justify-center gap-4 items-center dark:text-light-200' key={skill.name}>
                   <img src={skill.icon} alt={skill.name} className='aspect-square max-w-16 max-h-16 hover:-translate-y-2 duration-500'/>
