@@ -1,11 +1,15 @@
 import { DocumentArrowDownIcon, UserIcon } from '@heroicons/react/24/solid';
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
-import photo from "../assets/my-photo.png";
-import photo2 from "../assets/my-photo2.png";
-import skills from '../data/skills.json';
+import photo from "../../assets/my-photo.png";
+import photo2 from "../../assets/my-photo2.png";
+import { LinkIcon } from '../../components/LinkIcon';
+import aboutme from '../../data/aboutme.json';
+import skills from '../../data/skills.json';
+import { SkillsCard } from './SkillsCard';
+import { Title } from './Title';
 
-export function Start() {
+export default function Start() {
   return (
     <article>
       <section className="padding-page bg-light-100 dark:bg-dark-200">
@@ -35,34 +39,18 @@ export function Start() {
                 </span>
               </p>
               <div className="flex gap-4 mt-6">
-                <a
-                  href="https://www.linkedin.com/in/caio-pfaltzgraff/"
-                  target="_blank"
-                  className="hover:-translate-y-4 duration-500 ease-in"
-                >
+                <LinkIcon path="https://www.linkedin.com/in/caio-pfaltzgraff/" animation={true} >
                   <FaLinkedin className="h-10 lg:h-12 w-auto hover:text-linkedin" />
-                </a>
-                <a
-                  href="https://github.com/Caio-Pfaltzgraff"
-                  target="_blank"
-                  className="hover:-translate-y-4 duration-500 ease-in"
-                >
+                </LinkIcon>
+                <LinkIcon path="https://github.com/Caio-Pfaltzgraff" animation={true} >
                   <FaGithub className="h-10 lg:h-12 w-auto hover:text-github" />
-                </a>
-                <a
-                  href="mailto:caio.rllcr@gmail.com"
-                  target="_blank"
-                  className="hover:-translate-y-4 duration-500 ease-in"
-                >
+                </LinkIcon>
+                <LinkIcon path="mailto:caio.rllcr@gmail.com" animation={true} >
                   <BiLogoGmail className="h-10 lg:h-12 w-auto hover:text-gmail" />
-                </a>
-                <a
-                  href="https://wa.me/5521980891793"
-                  target="_blank"
-                  className="hover:-translate-y-4 duration-500 ease-in"
-                >
+                </LinkIcon>
+                <LinkIcon path="https://wa.me/5521980891793" animation={true} >
                   <FaWhatsapp className="h-10 lg:h-12 w-auto hover:text-whatsapp" />
-                </a>
+                </LinkIcon>
               </div>
               <div className='flex justify-center md:justify-start mt-10'>
                 <button className="bg-orange-700 hover:bg-orange-600 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center transition-colors duration-700 border-none outline-none">
@@ -77,11 +65,7 @@ export function Start() {
       
       <section className="padding-page dark:bg-dark-100">
         <div className='py-10 md:py-12 lg:py-14'>
-          <div className="text-center pb-10 md:pb-12 lg:pb-14">
-            <h2 className="text-3xl font-title font-bold dark:text-light-100">
-              Quem sou eu ?
-            </h2>
-          </div>
+          <Title content="Quem sou eu ?" />
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-10">
             <div className="m-4 md:m-2 flex justify-center md:justify-start md:pb-24 lg:pb-0">
@@ -97,21 +81,11 @@ export function Start() {
             
             <div className="space-y-8 md:space-y-10">
               <div className='space-y-4 font-medium lg:text-lg 2xl:text-xl dark:text-light-100'>
-                <p>
-                  Sou recém-formado em Análise e Desenvolvimento de Sistemas com
-                  experiência em desenvolvimento de APIs Rest (Java/Spring Boot) e
-                  interfaces interativas (React/JavaScript/TypeScript).
-                </p>
-                <p>
-                  Além das habilidades técnicas, trabalho minhas habilidades
-                  comportamentais, como comunicação, dedicação e organização, o
-                  que me faz ser um dev versátil.
-                </p>
-                <p>
-                  Estou atualmente em busca da minha primeira oportunidade como
-                  desenvolvedor web Jr ou trainee,ansioso para aplicar e ampliar
-                  minhas habilidades em um ambiente desafiador.
-                </p>
+                {aboutme.map(text => (
+                  <p key={text.id}>
+                    {text.content}
+                  </p>
+                ))}
               </div>
               <div className="flex gap-6 justify-center">
                 <button className="bg-azul-escuro hover:bg-blue-950 dark:bg-orange-700 dark:hover:bg-orange-600 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center transition-colors duration-700 border-none outline-none">
@@ -123,22 +97,14 @@ export function Start() {
           </div>
         </div>
       </section>
+
       <section className='padding-page bg-light-100 dark:bg-dark-200'>
         <div className='py-10 md:py-12 lg:py-14'>
-          <div className="text-center pb-10 md:pb-12 lg:pb-14">
-            <h2 className="text-3xl font-title font-bold dark:text-light-100">
-              Habilidades
-            </h2>
-          </div>
+          <Title content="Habilidades" />
+
           <div className='flex justify-center'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 gap-y-10 justify-center border-2 border-gray-400 dark:border-[#3f3f3f] rounded-xl px-4 md:px-6 py-10 sm:py-10 box-border max-w-2xl lg:max-w-4xl xl:max-w-5xl'>
-              {skills.map( skill => (
-                <div className='flex flex-col justify-center gap-4 items-center dark:text-light-200' key={skill.name}>
-                  <img src={skill.icon} alt={skill.name} className='aspect-square max-w-16 max-h-16 hover:-translate-y-2 duration-500'/>
-                  <p className='text-center font-developer font-semibold text-lg'>{skill.name}</p>
-                  <p className='text-gray-700 dark:text-gray-400 font-medium'>{skill.level}</p>
-                </div>
-              ))}
+              { skills.map( skill => <SkillsCard skill={skill} key={skill.name} />) }
             </div>
           </div>
         </div>
