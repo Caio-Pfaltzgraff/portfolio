@@ -83,10 +83,5 @@
     "icon": "/src/assets/icons/office-icon.png",
     "name": "Pacote Office",
     "level": "Intermediário"
-  },
-  {
-    "icon": "/src/assets/icons/google-ads-icon.png",
-    "name": "Google ADS",
-    "level": "Intermediário"
   }
 ]

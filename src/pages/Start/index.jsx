@@ -6,6 +6,7 @@ import photo2 from "../../assets/my-photo2.png";
 import { LinkIcon } from '../../components/LinkIcon';
 import aboutme from '../../data/aboutme.json';
 import skills from '../../data/skills.json';
+import { ProjectCard } from './ProjectCard';
 import { SkillsCard } from './SkillsCard';
 import { Title } from './Title';
 
@@ -106,6 +107,18 @@ export default function Start() {
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 gap-y-10 justify-center border-2 border-gray-400 dark:border-[#3f3f3f] rounded-xl px-4 md:px-6 py-10 sm:py-10 box-border max-w-2xl lg:max-w-4xl xl:max-w-5xl'>
               { skills.map( skill => <SkillsCard skill={skill} key={skill.name} />) }
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="padding-page dark:bg-dark-100">
+        <div className='py-10 md:py-12 lg:py-14'>
+          <Title content="Projetos" />
+
+          <div className='grid lg:grid-rows-1 justify-center gap-8 md:gap-x-4 xl:gap-10  md:grid-cols-2 lg:grid-cols-3 p-0'>
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
           </div>
         </div>
       </section>
