@@ -1,7 +1,10 @@
 import { DocumentArrowDownIcon, UserIcon } from '@heroicons/react/24/solid';
 import { BiLogoGmail } from "react-icons/bi";
 import { FaEye, FaGithub, FaLinkedin, FaUser, FaWhatsapp } from "react-icons/fa6";
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { LiaRobotSolid } from "react-icons/lia";
 import { MdEmail } from "react-icons/md";
+import { TbApi } from "react-icons/tb";
 import photo from "../../assets/my-photo.png";
 import photo2 from "../../assets/my-photo2.png";
 import { ContactForm } from '../../components/ContactForm';
@@ -105,7 +108,7 @@ export default function Start() {
         <div className='py-10 md:py-12 lg:py-14'>
           <Title content="Habilidades" />
 
-          <div className='flex justify-center'>
+          <div className='flex justify-center px-2'>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-6 gap-y-10 justify-center border-2 border-gray-400 dark:border-[#3f3f3f] rounded-xl px-4 md:px-6 py-10 sm:py-10 box-border max-w-2xl lg:max-w-4xl xl:max-w-5xl'>
               { skills.map( skill => <SkillsCard skill={skill} key={skill.name} />) }
             </div>
@@ -117,7 +120,7 @@ export default function Start() {
         <div className='py-10 md:py-12 lg:py-14'>
           <Title content="Projetos" />
 
-          <div className='grid lg:grid-rows-1 justify-center gap-8 md:gap-x-4 xl:gap-10  md:grid-cols-2 lg:grid-cols-3 p-0'>
+          <div className='grid lg:grid-rows-1 justify-center gap-8 md:gap-x-4 xl:gap-10  md:grid-cols-2 lg:grid-cols-3 px-2'>
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
@@ -128,6 +131,113 @@ export default function Start() {
               Ver Mais {" "}
               <FaEye />
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className='padding-page bg-light-100 dark:bg-dark-200'>
+        <div className='py-10 md:py-12 lg:py-14'>
+          <Title content="Conquistas" />
+
+          <div className='grid gap-y-6 gap-x-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
+            <div className='space-y-3 border-2 border-orange-700 bg-azul-escuro dark:bg-transparent rounded-lg p-6 md:col-span-2'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Tecnólogo
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Análise e Desenvolvimento de Sistemas - <span className='font-normal text-base'>Universidade Estácio de Sá</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>2021 - 2024</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+            <div className='space-y-3 border-2 border-azul-escuro dark:border-zinc-500 bg-azul-escuro dark:bg-transparent rounded-lg p-6'>
+              <h6 className='font-title font-semibold text-lg sm:text-xl tracking-widest text-light-100'>
+                Curso
+              </h6>
+              <p className='text-light-100 text-lg sm:text-2xl font-bold line-clamp-2'>Java e Spring Boot - <span className='font-normal text-base'>Alura</span></p>
+              <p className='text-light-100 text-lg sm:text-xl font-semibold'>40h - 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="padding-page dark:bg-dark-100">
+        <div className='py-10 md:py-12 lg:py-14'>
+          <Title content="Serviços" />
+
+          <div className='grid justify-center md:flex md:justify-between md:gap-x-3 gap-y-6'>
+            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-zinc-800 border-b-4 border-orange-700'>
+              <HiOutlineDevicePhoneMobile className='text-4xl text-orange-700'/>
+              <p className='font-medium text-center text-light-100 dark:text-zinc-600'>Criação de sites</p>
+            </div>
+            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-zinc-800 border-b-4 border-orange-700'>
+              <TbApi className='text-4xl text-orange-700'/>
+              <p className='font-medium text-center text-light-100 dark:text-zinc-600'>Criação de APIs</p>
+            </div>
+            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-zinc-800 border-b-4 border-orange-700'>
+              <LiaRobotSolid className='text-4xl text-orange-700'/>
+              <p className='font-medium text-center text-light-100 dark:text-zinc-600'>Automações</p>
+            </div>
           </div>
         </div>
       </section>
