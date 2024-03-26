@@ -1,8 +1,10 @@
 import { DocumentArrowDownIcon, UserIcon } from '@heroicons/react/24/solid';
 import { BiLogoGmail } from "react-icons/bi";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaEye, FaGithub, FaLinkedin, FaUser, FaWhatsapp } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 import photo from "../../assets/my-photo.png";
 import photo2 from "../../assets/my-photo2.png";
+import { ContactForm } from '../../components/ContactForm';
 import { LinkIcon } from '../../components/LinkIcon';
 import aboutme from '../../data/aboutme.json';
 import skills from '../../data/skills.json';
@@ -119,6 +121,55 @@ export default function Start() {
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
+          </div>
+
+          <div className='flex justify-center mt-8 lg:mt-12'>
+            <button className='bg-azul-escuro hover:bg-blue-950 dark:bg-orange-700 dark:hover:bg-orange-600 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center gap-x-2 transition-colors duration-700 border-none outline-none'>
+              Ver Mais {" "}
+              <FaEye />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className='padding-page bg-light-100 dark:bg-dark-200'>
+        <div className='py-10 md:py-12 lg:py-14'>
+          <Title content="Contato" />
+
+          <div className='flex justify-center items-center'>
+            <div className='grid md:grid-cols-2 gap-4 max-w-5xl'>
+              <div className='space-y-4'>
+                <h5 className='text-2xl font-bold font-title text-orange-700'>Se interessou?</h5>
+                <p className='dark:text-light-200'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt molestias tenetur enim, libero iure veniam id impedit molestiae aperiam iste quae quidem quis quaerat ab mollitia quos? Nemo, quidem neque?
+                </p>
+                <div className='flex flex-col gap-2'>
+                  <div className='flex gap-x-4'>
+                    <div className='flex justify-center items-center h-11'>
+                      <FaUser className='text-orange-700 text-2xl'/>
+                    </div>
+                    <div>
+                      <p className='font-semibold dark:text-light-200'>Nome</p>
+                      <p className='dark:text-gray-400'>Caio Pfaltzgraff</p>
+                    </div>
+                  </div>
+                  <div className='flex gap-x-4'>
+                    <div className='flex justify-center items-center h-11'>
+                      <MdEmail className='text-orange-700 text-2xl'/>
+                    </div>
+                    <div>
+                      <p className='font-semibold dark:text-light-200'>Email</p>
+                      <p className='dark:text-gray-400'>caio.rllcr@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='space-y-4'>
+                <h5 className='text-2xl font-bold font-title text-orange-700'>Mande uma mensagem</h5>
+              
+                <ContactForm />
+              </div>
+            </div>
           </div>
         </div>
       </section>
