@@ -18,8 +18,8 @@ import { Title } from './Title';
 export default function Start() {
   return (
     <article>
-      <section className="padding-page bg-light-100 dark:bg-dark-200">
-        <div className="flex flex-col md:justify-between md:flex-row-reverse md:items-center py-12 md:py-20 lg:py-24">
+      <section className="padding-page">
+        <div className="flex flex-col mx-auto max-w-screen-xl md:justify-between md:flex-row-reverse md:items-center py-12 md:py-20 lg:py-24">
           <div className="flex justify-center items-center">
             <div className="border dark:border-light-200 rounded-full shadow-lg shadow-gray-700 dark:shadow-none p-2 hover:scale-110 transition duration-500">
               <img
@@ -69,8 +69,8 @@ export default function Start() {
         </div>
       </section>
       
-      <section className="padding-page dark:bg-dark-100">
-        <div className='py-10 md:py-12 lg:py-14'>
+      <section className="padding-page">
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
           <Title content="Quem sou eu ?" />
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-10">
@@ -104,8 +104,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className='padding-page bg-light-100 dark:bg-dark-200'>
-        <div className='py-10 md:py-12 lg:py-14'>
+      <section className='padding-page'>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
           <Title content="Habilidades" />
 
           <div className='flex justify-center px-2'>
@@ -116,8 +116,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className="padding-page dark:bg-dark-100">
-        <div className='py-10 md:py-12 lg:py-14'>
+      <section className="padding-page">
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
           <Title content="Projetos" />
 
           <div className='grid lg:grid-rows-1 justify-center gap-8 md:gap-x-4 xl:gap-10  md:grid-cols-2 lg:grid-cols-3 px-2'>
@@ -135,8 +135,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className='padding-page bg-light-100 dark:bg-dark-200'>
-        <div className='py-10 md:py-12 lg:py-14'>
+      <section className='padding-page'>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
           <Title content="Conquistas" />
 
           <div className='grid gap-y-6 gap-x-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
@@ -221,8 +221,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className="padding-page dark:bg-dark-100">
-        <div className='py-10 md:py-12 lg:py-14'>
+      <section className="padding-page">
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
           <Title content="Serviços" />
 
           <div className='grid justify-center md:flex md:justify-between md:gap-x-3 gap-y-6'>
@@ -242,8 +242,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className='padding-page bg-light-100 dark:bg-dark-200'>
-        <div className='py-10 md:py-12 lg:py-14'>
+      <section className='padding-page'>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
           <Title content="Contato" />
 
           <div className='flex justify-center items-center'>
