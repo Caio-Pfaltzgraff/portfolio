@@ -18,7 +18,7 @@ export function Menu() {
 
   return (
     <nav className='bg-azul-escuro dark:bg-dark-100 fixed top-0 w-full z-50'>
-      <div className='max-w-screen-xl mx-auto p-4 2xl:px-0 flex items-center justify-between'>
+      <div className='max-w-screen-xl mx-auto padding-page flex items-center justify-between'>
         <Link to="/" className='text-2xl font-title text-light-200 font-semibold'>
           Port<span className='text-orange-700'>fólio</span>
         </Link>

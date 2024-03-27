@@ -14,7 +14,7 @@ export function ToggleTheme() {
   }
 
   return (
-    <div className='md:ml-4'>
+    <div className='md:ml-2'>
       <MoonIcon className='h-7 md:h-6 text-gray-100 block dark:hidden cursor-pointer' onClick={toggle}/>
       <SunIcon className='h-7 md:h-6 text-gray-100 hidden dark:block cursor-pointer' onClick={toggle}/>
     </div>

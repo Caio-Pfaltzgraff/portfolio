@@ -6,9 +6,9 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-azul-escuro dark:bg-dark-100">
-      <div className="padding-page flex flex-col gap-4 sm:flex-row sm:justify-between items-center py-4 xl:py-5 text-light-200">
-        <div className="flex gap-4 lg:gap-6 text-3xl ">
+    <footer className="bg-azul-escuro dark:bg-dark-100 w-full">
+      <div className="max-w-screen-xl mx-auto padding-page flex flex-col md:flex-row md:justify-between items-center gap-y-5 text-light-200">
+        <div className="flex mx-0 gap-x-4 text-3xl">
           <LinkIcon path="https://www.linkedin.com/in/caio-pfaltzgraff/">
             <FaLinkedin className="hover:text-linkedin"/>
           </LinkIcon>

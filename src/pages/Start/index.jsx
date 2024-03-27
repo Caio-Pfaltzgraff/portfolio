@@ -1,7 +1,6 @@
-import { DocumentArrowDownIcon, UserIcon } from '@heroicons/react/24/solid';
 import { BiLogoGmail } from "react-icons/bi";
 import { FaEye, FaGithub, FaLinkedin, FaUser, FaWhatsapp } from "react-icons/fa6";
-import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { HiDocumentArrowDown, HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { LiaRobotSolid } from "react-icons/lia";
 import { MdEmail } from "react-icons/md";
 import { TbApi } from "react-icons/tb";
@@ -18,8 +17,8 @@ import { Title } from './Title';
 export default function Start() {
   return (
     <article>
-      <section className="padding-page">
-        <div className="flex flex-col mx-auto max-w-screen-xl md:justify-between md:flex-row-reverse md:items-center py-12 md:py-20 lg:py-24">
+      <section>
+        <div className="flex flex-col mx-auto max-w-screen-xl padding-page md:justify-between md:flex-row-reverse md:items-center py-12 md:py-20 lg:py-24">
           <div className="flex justify-center items-center">
             <div className="border dark:border-light-200 rounded-full shadow-lg shadow-gray-700 dark:shadow-none p-2 hover:scale-110 transition duration-500">
               <img
@@ -61,7 +60,7 @@ export default function Start() {
               <div className='flex justify-center md:justify-start mt-10'>
                 <button className="bg-orange-700 hover:bg-orange-600 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center transition-colors duration-700 border-none outline-none">
                   Download CV{" "}
-                  <DocumentArrowDownIcon className="h-6 ml-2 animate-bounce" />
+                  <HiDocumentArrowDown className="h-6 w-6 ml-2 animate-bounce" />
                 </button>
               </div>
             </div>
@@ -69,8 +68,8 @@ export default function Start() {
         </div>
       </section>
       
-      <section className="padding-page">
-        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
+      <section>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page'>
           <Title content="Quem sou eu ?" />
 
           <div className="flex flex-col md:grid md:grid-cols-2 gap-10">
@@ -93,19 +92,13 @@ export default function Start() {
                   </p>
                 ))}
               </div>
-              <div className="flex gap-6 justify-center">
-                <button className="bg-azul-escuro hover:bg-blue-950 dark:bg-orange-700 dark:hover:bg-orange-600 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center transition-colors duration-700 border-none outline-none">
-                  Saiba mais
-                  <UserIcon className="h-6 ml-2 " />
-                </button>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className='padding-page'>
-        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
+      <section>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page'>
           <Title content="Habilidades" />
 
           <div className='flex justify-center px-2'>
@@ -116,8 +109,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className="padding-page">
-        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
+      <section>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page'>
           <Title content="Projetos" />
 
           <div className='grid lg:grid-rows-1 justify-center gap-8 md:gap-x-4 xl:gap-10  md:grid-cols-2 lg:grid-cols-3 px-2'>
@@ -135,8 +128,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className='padding-page'>
-        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
+      <section>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page'>
           <Title content="Conquistas" />
 
           <div className='grid gap-y-6 gap-x-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
@@ -221,20 +214,20 @@ export default function Start() {
         </div>
       </section>
 
-      <section className="padding-page">
-        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
+      <section>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page'>
           <Title content="Serviços" />
 
           <div className='grid justify-center md:flex md:justify-between md:gap-x-3 gap-y-6'>
-            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-zinc-800 border-b-4 border-orange-700'>
+            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-dark-100 border-b-4 border-orange-700'>
               <HiOutlineDevicePhoneMobile className='text-4xl text-orange-700'/>
               <p className='font-medium text-center text-light-100 dark:text-zinc-600'>Criação de sites</p>
             </div>
-            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-zinc-800 border-b-4 border-orange-700'>
+            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-dark-100 border-b-4 border-orange-700'>
               <TbApi className='text-4xl text-orange-700'/>
               <p className='font-medium text-center text-light-100 dark:text-zinc-600'>Criação de APIs</p>
             </div>
-            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-zinc-800 border-b-4 border-orange-700'>
+            <div className='grid justify-items-center gap-y-4 py-10 w-64 sm:w-80 bg-azul-escuro dark:bg-dark-100 border-b-4 border-orange-700'>
               <LiaRobotSolid className='text-4xl text-orange-700'/>
               <p className='font-medium text-center text-light-100 dark:text-zinc-600'>Automações</p>
             </div>
@@ -242,8 +235,8 @@ export default function Start() {
         </div>
       </section>
 
-      <section className='padding-page'>
-        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl'>
+      <section>
+        <div className='py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page'>
           <Title content="Contato" />
 
           <div className='flex justify-center items-center'>
