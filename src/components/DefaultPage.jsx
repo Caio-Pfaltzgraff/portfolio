@@ -5,7 +5,9 @@ import { Menu } from '../components/Menu';
 export function DefaultPage() {
   return (
     <>
-      <Menu />
+      <header className="h-16 w-full">
+        <Menu />
+      </header>
       <main>
         <Outlet />
       </main>
