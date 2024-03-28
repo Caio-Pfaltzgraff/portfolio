@@ -1,28 +1,59 @@
 import { SectionTemplate } from "../../../components/SectionTemplate.jsx";
 import photo2 from "/my-photo2.png";
-import aboutme from '/src/data/aboutme.json';
 
 export function AboutMeSection() {
   return (
     <SectionTemplate title="Sobre mim">
-      <div className="flex flex-col md:grid md:grid-cols-2 gap-10">
-        <div className="m-4 md:m-2 flex justify-center md:justify-start md:pb-24 lg:pb-0">
-          <div className="border shadow-lg -rotate-6 rounded-sm max-w-80 md:max-w-[400px] lg:max-w-[460px] md:min-h-80 bg-light-200 dark:border-none dark:shadow-gray-800">
-            <div className="p-3 lg:p-4">
-              <img src={photo2} alt="Caio turistando" />
-            </div>
-            <div className="flex justify-center items-center pb-3 lg:pb-4">
-              <p className="md:text-lg">Turistando</p>
+      <div className="grid gap-10 md:grid-cols-2">
+        <div className="flex justify-center lg:justify-start items-center md:pl-3">
+          <div className="p-2 max-w-sm">
+            <div className="border shadow-lg lg:shadow-xl dark:shadow-lg dark:shadow-zinc-700 p-2 md:p-3 -rotate-6 rounded-sm dark:bg-gray-300">
+              <img
+                src={photo2}
+                alt="Foto do Caio Pfaltzgraff"
+                className="aspect-square rounded-sm mb-[8vw] md:mb-10"
+              />
             </div>
           </div>
         </div>
 
-        <div className="space-y-8 md:space-y-10">
-          <div className="space-y-4 font-medium lg:text-lg 2xl:text-xl dark:text-light-100">
-            {aboutme.map((text) => (
-              <p key={text.id}>{text.content}</p>
-            ))}
-          </div>
+        <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-y-8">
+          <p className="leading-relaxed xl:text-lg dark:text-light-200">
+            Sou recém-formado em Análise e Desenvolvimento de Sistemas com
+            experiência em desenvolvimento de APIs Rest (
+            <span className="font-bold tracking-wide dark:text-orange-800">
+              Java
+            </span>
+            ,{" "}
+            <span className="font-bold tracking-wide dark:text-orange-800">
+              Spring Boot
+            </span>
+            ) e interfaces interativas (
+            <span className="font-bold tracking-wide dark:text-orange-800">
+              React
+            </span>
+            ,{" "}
+            <span className="font-bold tracking-wide dark:text-orange-800">
+              JavaScript
+            </span>
+            ,{" "}
+            <span className="font-bold tracking-wide dark:text-orange-800">
+              TypeScript
+            </span>
+            ).
+          </p>
+
+          <p className="leading-relaxed xl:text-lg dark:text-light-200">
+            Além das habilidades técnicas, trabalho minhas habilidades
+            comportamentais, como comunicação, organização e
+            proatividade, características que me fazem ser um dev versátil.
+          </p>
+
+          <p className="leading-relaxed xl:text-lg dark:text-light-200">
+            Estou atualmente em busca da minha primeira oportunidade como
+            desenvolvedor web Jr, ansioso para aplicar e ampliar
+            minhas habilidades em um ambiente desafiador.
+          </p>
         </div>
       </div>
     </SectionTemplate>

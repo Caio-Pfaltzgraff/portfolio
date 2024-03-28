@@ -22,12 +22,12 @@ export function PresentationSection() {
   }
 
   return (
-    <section>
-      <div className="flex items-center max-w-screen-xl mx-auto h-screen padding-page">
+    <section className="">
+      <div className="flex items-center sm:max-w-[90%] md:max-w-screen-xl mx-auto h-screen padding-page">
         <div className="grid gap-y-6 md:gap-y-8">
           
           <div className="flex justify-center">
-            <h1 className="font-extrabold text-[12vw] sm:text-[5.5rem] xl:text-8xl leading-tight text-center text-slate-800 dark:text-light-100 z-10">
+            <h1 className="font-extrabold text-[12vw] sm:text-[2.5rem] md:text-[5.5rem] xl:text-8xl leading-tight text-center text-slate-800 dark:text-light-100 z-10">
               {"Seu próximo desenvolvedor "}{" "}
               <span className="bg-gradient-to-r from-blue-700 via-pink-700 to-orange-700 inline-block text-transparent bg-clip-text">
                 Fullstack
