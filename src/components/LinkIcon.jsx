@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 export function LinkIcon({path, children, animation = false, className = ''}) {
   return (
     <a

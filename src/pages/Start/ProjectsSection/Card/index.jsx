@@ -6,7 +6,7 @@ import { Tooltip } from "react-tippy";
 import "react-tippy/dist/tippy.css";
 import photo from '/projects/project.png';
 
-export function ProjectCard() {
+export function Card() {
   return (
     <div className="flex flex-col gap-y-4 rounded-lg p-2 box-border border dark:border-[#3f3f3f] shadow-lg max-w-md">
       <div className="flex gap-2">
