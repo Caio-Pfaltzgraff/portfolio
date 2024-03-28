@@ -4,7 +4,6 @@ import { HiDocumentArrowDown, HiOutlineDevicePhoneMobile } from "react-icons/hi2
 import { LiaRobotSolid } from "react-icons/lia";
 import { MdEmail } from "react-icons/md";
 import { TbApi } from "react-icons/tb";
-import photo2 from "../../assets/my-photo2.png";
 import { ContactForm } from '../../components/ContactForm';
 import { LinkIcon } from '../../components/LinkIcon';
 import aboutme from '../../data/aboutme.json';
@@ -12,6 +11,7 @@ import skills from '../../data/skills.json';
 import { ProjectCard } from './ProjectCard';
 import { SkillsCard } from './SkillsCard';
 import { Title } from './Title';
+import photo2 from "/my-photo2.png";
 
 export default function Start() {
   function myAgeCalculator() {

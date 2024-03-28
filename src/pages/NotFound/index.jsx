@@ -1,6 +1,6 @@
 import { PiArrowUUpLeftFill } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
-import notfoundImg from '../../assets/notfound.png';
+import notfoundImg from '/notfound.png';
 
 export default function NotFound() {
   const navigate = useNavigate();
