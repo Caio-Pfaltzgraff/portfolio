@@ -35,13 +35,19 @@ export default function Start() {
           <div className="grid gap-y-6 md:gap-y-8">
             <div className="flex justify-center">
               <h1 className="font-extrabold text-[12vw] sm:text-[5.5rem] xl:text-8xl leading-tight text-center text-slate-800 dark:text-light-100 z-10">
-                {"Seu próximo desenvolvedor "} <span className="bg-gradient-to-r from-blue-700 via-pink-700 to-orange-700 inline-block text-transparent bg-clip-text">Fullstack</span>
+                {"Seu próximo desenvolvedor "}{" "}
+                <span className="bg-gradient-to-r from-blue-700 via-pink-700 to-orange-700 inline-block text-transparent bg-clip-text">
+                  Fullstack
+                </span>
               </h1>
             </div>
             <div className="flex justify-center">
               <p className="max-w-2xl font-medium md:text-lg leading-relaxed dark:text-light-100 text-center">
-                Olá, me chamo Caio Pfaltzgraff,{" "}
-                {myAgeCalculator()} anos, desenvolvedor fullstack, backend, <span className="font-bold dark:text-orange-700">Java</span> e <span className="font-bold dark:text-orange-700">React</span>, saiba mais sobre mim
+                Olá, me chamo Caio Pfaltzgraff, {myAgeCalculator()} anos,
+                desenvolvedor fullstack, backend,{" "}
+                <span className="font-bold dark:text-orange-700">Java</span> e{" "}
+                <span className="font-bold dark:text-orange-700">React</span>,
+                saiba mais sobre mim
               </p>
             </div>
             <div className="flex justify-center gap-4 dark:text-light-100">
@@ -323,11 +329,14 @@ export default function Start() {
                 <h5 className="text-2xl font-bold font-title text-orange-700">
                   Se interessou?
                 </h5>
-                <p className="dark:text-light-200">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Incidunt molestias tenetur enim, libero iure veniam id impedit
-                  molestiae aperiam iste quae quidem quis quaerat ab mollitia
-                  quos? Nemo, quidem neque?
+                <p className="dark:text-light-200 leading-relaxed">
+                  Se você estiver em busca de alguém dedicado, com fome por
+                  aprendizado e que deseja crescer junto à sua empresa, ficaria
+                  honrado em ter essa oportunidade. Estou disponível também para novos
+                  projetos e colaborações. Sinta-se à vontade para entrar em
+                  contato e juntos transformarmos ideias em realidade. Entre em
+                  contato e marcamos uma conversa para discutir como podemos
+                  trabalhar juntos.
                 </p>
                 <div className="flex flex-col gap-2">
                   <div className="flex gap-x-4">
