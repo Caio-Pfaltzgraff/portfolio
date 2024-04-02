@@ -6,9 +6,7 @@ import { ContactForm } from "/src/components/ContactForm";
 export function ContactSection() {
   return (
     <SectionTemplate title="Contato">
-      <div className="flex justify-center items-center">
-
-        <div className="grid md:grid-cols-2 gap-4 max-w-5xl">
+        <div className="grid md:grid-cols-2 gap-4 max-w-5xl mx-auto">
           <div className="space-y-4">
 
             <h5 className="text-2xl font-bold font-title text-orange-700">
@@ -58,7 +56,6 @@ export function ContactSection() {
             <ContactForm />
           </div>
         </div>
-      </div>
     </SectionTemplate>
   );
 }

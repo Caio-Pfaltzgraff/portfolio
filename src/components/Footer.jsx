@@ -1,6 +1,7 @@
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaReact, FaWhatsapp } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
+import { Tooltip } from "react-tippy";
 import { LinkIcon } from "./LinkIcon";
 
 export function Footer() {
@@ -76,9 +77,23 @@ export function Footer() {
                 Desenvolvido por Caio Pfaltzgraff utilizando{" "}
                 <span className="sm:hidden">React com Javascript.</span>
               </p>
-              <FaReact className="w-7 h-7 -mt-1 text-cyan-700 hidden sm:block" />
+              <Tooltip
+                title="React"
+                interactive={true}
+                arrow={true}
+                animation="perspective"
+              >
+                <FaReact className="w-7 h-7 -mt-1 text-cyan-700 hidden sm:block" />
+              </Tooltip>
               <span className="hidden sm:block">com</span>
-              <RiJavascriptFill className="w-7 h-7 -mt-1 text-yellow-500 hidden sm:block" />
+              <Tooltip
+                title="Javascript"
+                interactive={true}
+                arrow={true}
+                animation="perspective"
+              >
+                <RiJavascriptFill className="w-7 h-7 -mt-1 text-yellow-500 hidden sm:block" />
+              </Tooltip>
             </div>
           </div>
         </div>

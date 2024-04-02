@@ -39,9 +39,9 @@ export function PresentationSection() {
             <p className="max-w-2xl md:text-lg leading-relaxed dark:text-light-100 text-center">
               Olá, me chamo Caio Pfaltzgraff, {myAgeCalculator()} anos,
               desenvolvedor fullstack,{" "}
-              <span className="font-bold dark:text-orange-700">Java</span> e{" "}
+              <span className="font-bold dark:text-orange-700">Java</span> ,{" "}
               <span className="font-bold dark:text-orange-700">React</span>,{" "}
-              <span className="font-bold dark:text-orange-700">JS</span>,{" "}
+              <span className="font-bold dark:text-orange-700">JS</span> e{" "}
               <span className="font-bold dark:text-orange-700">TS</span>.
             </p>
           </div>

@@ -7,7 +7,7 @@ export function AboutMeSection() {
       <div className="grid gap-10 md:grid-cols-2">
         <div className="flex justify-center lg:justify-start items-center md:pl-3">
           <div className="p-2 max-w-sm">
-            <div className="border shadow-lg lg:shadow-xl dark:shadow-lg dark:shadow-zinc-700 p-2 md:p-3 -rotate-6 rounded-sm dark:bg-gray-300">
+            <div className="border shadow-lg lg:shadow-xl dark:shadow-none p-2 md:p-3 -rotate-6 rounded-sm dark:bg-gray-300">
               <img
                 src={photo2}
                 alt="Foto do Caio Pfaltzgraff"
@@ -51,7 +51,7 @@ export function AboutMeSection() {
 
           <p className="leading-relaxed xl:text-lg dark:text-light-200">
             Estou atualmente em busca da minha primeira oportunidade como
-            desenvolvedor web Jr, ansioso para aplicar e ampliar
+            desenvolvedor web full-stack Jr, ansioso para aplicar e ampliar
             minhas habilidades em um ambiente desafiador.
           </p>
         </div>

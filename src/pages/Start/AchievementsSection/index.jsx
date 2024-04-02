@@ -4,7 +4,7 @@ export function AchievementsSection() {
   return (
     <SectionTemplate title="Conquistas">
       <div className="grid gap-y-6 gap-x-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-        <div className="space-y-3 border-2 border-orange-700 dark:bg-transparent shadow-lg dark:shadow-orange-900 hover:scale-110 duration-500 rounded-lg p-6 md:col-span-2">
+        <div className="space-y-3 border-2 border-orange-700 dark:bg-transparent shadow-lg dark:shadow-orange-900 lg:hover:scale-105 duration-500 rounded-lg p-6 md:col-span-2">
           <h6 className="font-title font-semibold text-lg sm:text-xl tracking-widest dark:text-light-100">
             Graduação
           </h6>
@@ -19,7 +19,7 @@ export function AchievementsSection() {
           </p>
         </div>
 
-        <div className="space-y-3 border shadow-lg dark:shadow-gray-700 hover:scale-110 duration-500 dark:border-zinc-500 rounded-lg p-6">
+        <div className="space-y-3 border shadow-lg dark:shadow-gray-700 lg:hover:scale-105 duration-500 dark:border-zinc-500 rounded-lg p-6">
           <h6 className="font-title font-semibold text-lg sm:text-xl tracking-widest dark:text-light-100">
             Cursos
           </h6>
@@ -34,7 +34,7 @@ export function AchievementsSection() {
           </p>
         </div>
 
-        <div className="space-y-3 border shadow-lg dark:shadow-gray-700 hover:scale-110 duration-500 dark:border-zinc-500 rounded-lg p-6">
+        <div className="space-y-3 border shadow-lg dark:shadow-gray-700 lg:hover:scale-105 duration-500 dark:border-zinc-500 rounded-lg p-6">
           <h6 className="font-title font-semibold text-lg sm:text-xl tracking-widest dark:text-light-100">
             BootCamp
           </h6>
@@ -49,7 +49,7 @@ export function AchievementsSection() {
           </p>
         </div>
 
-        <div className="space-y-3 border shadow-lg dark:shadow-gray-700 hover:scale-110 duration-500 dark:border-zinc-500 rounded-lg p-6">
+        <div className="space-y-3 border shadow-lg dark:shadow-gray-700 lg:hover:scale-105 duration-500 dark:border-zinc-500 rounded-lg p-6">
           <h6 className="font-title font-semibold text-lg sm:text-xl tracking-widest dark:text-light-100">
             Evento
           </h6>

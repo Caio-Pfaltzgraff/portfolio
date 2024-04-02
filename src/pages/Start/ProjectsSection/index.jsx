@@ -1,4 +1,5 @@
 import { FaEye } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { SectionTemplate } from "../../../components/SectionTemplate";
 import { Card } from './Card';
 
@@ -12,11 +13,12 @@ export function ProjectsSection() {
       </div>
 
       <div className="flex justify-center items-center mt-8 lg:mt-12">
-        <button 
+        <Link
+          to='/projetos' 
           className="bg-azul-escuro hover:bg-blue-950 dark:bg-blue-950 dark:hover:bg-blue-900 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center gap-x-2 transition-colors duration-700 border-none outline-none"
         >
           Ver mais <FaEye />
-        </button>
+        </Link>
       </div>
     </SectionTemplate>
   );

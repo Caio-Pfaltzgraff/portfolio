@@ -22,8 +22,8 @@ export function ToggleTheme() {
 
   return (
     <div className='md:ml-2'>
-      <HiMoon className='h-6 w-6 text-gray-100 block dark:hidden cursor-pointer' onClick={toggle}/>
-      <HiSun className='h-6 w-6 text-gray-100 hidden dark:block cursor-pointer' onClick={toggle}/>
+      <HiMoon className='size-7 md:size-6 text-gray-100 block dark:hidden cursor-pointer' onClick={toggle}/>
+      <HiSun className='size-7 md:size-6 text-gray-100 hidden dark:block cursor-pointer' onClick={toggle}/>
     </div>
   )
 }

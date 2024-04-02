@@ -25,8 +25,8 @@ export function Menu() {
 
         <div className='flex gap-x-6 items-center md:hidden'>
           <ToggleTheme />
-          {!menuOpen && <FaBars className='h-7 w-7 text-light-200 cursor-pointer' onClick={handlerToggleMenu}/>}
-          {menuOpen && <AiOutlineClose className='h-7 w-7 text-light-200 cursor-pointer' onClick={handlerToggleMenu}/>}
+          {!menuOpen && <FaBars className='size-7 text-light-200 cursor-pointer' onClick={handlerToggleMenu}/>}
+          {menuOpen && <AiOutlineClose className='size-7 text-light-200 cursor-pointer' onClick={handlerToggleMenu}/>}
         </div>
 
         <div className='hidden md:flex gap-x-4'>
