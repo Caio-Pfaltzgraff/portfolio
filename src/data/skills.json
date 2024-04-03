@@ -30,6 +30,16 @@
     "level": "Básico"
   },
   {
+    "icon": "/icons/vite-icon.png",
+    "name": "Vite",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/icons/nextjs-icon.png",
+    "name": "NextJS",
+    "level": "Básico"
+  },
+  {
     "icon": "/icons/docker-icon.png",
     "name": "Docker",
     "level": "Básico"
@@ -72,6 +82,11 @@
   {
     "icon": "/icons/sass-icon.png",
     "name": "Sass",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/icons/material-ui-icon.png",
+    "name": "Material UI",
     "level": "Intermediário"
   },
   {

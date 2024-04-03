@@ -1,7 +1,5 @@
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaGithub, FaJava } from "react-icons/fa6";
-import { RiExternalLinkFill, RiJavascriptFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
+import { FaGithub } from "react-icons/fa6";
+import { RiExternalLinkFill } from "react-icons/ri";
 import { Tooltip } from "react-tippy";
 import "react-tippy/dist/tippy.css";
 import photo from "/projects/project.png";
@@ -35,7 +33,7 @@ export function Card() {
           arrow={true}
           animation="perspective"
         >
-          <RiJavascriptFill className="size-7"/>
+          <img src="/icons/javascript-icon.png" className="size-8"/>
         </Tooltip>
         <Tooltip
           title="Java"
@@ -43,7 +41,7 @@ export function Card() {
           arrow={true}
           animation="perspective"
         >
-          <FaJava className="size-7"/>
+          <img src="/icons/java-icon.png" className="size-8"/>
         </Tooltip>
         <Tooltip
           title="Typescript"
@@ -51,7 +49,7 @@ export function Card() {
           arrow={true}
           animation="perspective"
         >
-          <BiLogoTypescript className="size-7"/>
+          <img src="/icons/typescript-icon.png" className="size-8"/>
         </Tooltip>
         <Tooltip
           title="Vite"
@@ -59,7 +57,7 @@ export function Card() {
           arrow={true}
           animation="perspective"
         >
-          <SiVite className="size-7"/>
+          <img src="/icons/vite-icon.png" className="size-8"/>
         </Tooltip>
       </div>
 

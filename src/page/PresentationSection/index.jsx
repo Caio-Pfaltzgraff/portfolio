@@ -13,7 +13,7 @@ export function PresentationSection() {
 
     if (
       currentMonth < birthdayMonth ||
-      (currentMonth === birthdayMonth && today.getDay() < birthday.getDay())
+      (currentMonth === birthdayMonth && today.getDay() <= birthday.getDay())
     ) {
       age--;
     }
@@ -22,7 +22,7 @@ export function PresentationSection() {
   }
 
   return (
-    <section className="">
+    <section>
       <div className="flex items-center sm:max-w-[90%] md:max-w-screen-xl mx-auto h-screen padding-page">
         <div className="grid gap-y-6 md:gap-y-8">
           
@@ -36,7 +36,7 @@ export function PresentationSection() {
           </div>
 
           <div className="flex justify-center">
-            <p className="max-w-2xl md:text-lg leading-relaxed dark:text-light-100 text-center">
+            <p className="max-w-2xl  leading-relaxed dark:text-light-100 text-center">
               Olá, me chamo Caio Pfaltzgraff, {myAgeCalculator()} anos,
               desenvolvedor fullstack,{" "}
               <span className="font-bold dark:text-orange-700">Java</span> ,{" "}

@@ -2,7 +2,7 @@ import { BsSendFill } from "react-icons/bs";
 
 export function ContactForm() {
   return (
-    <form className="flex flex-col gap-y-6 md:max-w-lg">
+    <form className="flex flex-col gap-y-6">
       <input 
         id="name"
         type="text"

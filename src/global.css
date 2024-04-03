@@ -14,7 +14,7 @@
   }
 
   .nav-link {
-    @apply text-light-100 font-semibold
+    @apply text-light-100 text-sm lg:text-base font-medium
   }
 
   .nav-link-mobile {

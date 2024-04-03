@@ -1,6 +1,6 @@
-export function SectionTemplate({ children, title }) {
+export function SectionTemplate({ children, title, id }) {
   return (
-    <section>
+    <section id={id}>
       <div className="py-10 md:py-12 lg:py-14 mx-auto max-w-screen-xl padding-page">
         <Title content={title} />
 
