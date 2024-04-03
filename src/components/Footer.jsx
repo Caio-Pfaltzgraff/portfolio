@@ -16,7 +16,7 @@ export function Footer() {
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <LinkIcon 
                 path="https://www.linkedin.com/in/caio-pfaltzgraff/"
-                className="flex items-center gap-x-4 border border-zinc-400 p-2 rounded-tr-xl rounded-bl-xl hover:border-linkedin hover:text-linkedin text-light-200"
+                className="flex items-center gap-x-4 border border-zinc-400 p-3 rounded-tr-xl rounded-bl-xl hover:border-linkedin hover:text-linkedin text-light-200"
               >
                 <FaLinkedin className="size-6" />
                 <span>Linkedin</span>
@@ -24,7 +24,7 @@ export function Footer() {
 
               <LinkIcon 
                 path="https://github.com/Caio-Pfaltzgraff"
-                className="flex items-center gap-x-4 border border-zinc-400 p-2 rounded-tr-xl rounded-bl-xl hover:border-github hover:text-github text-light-200"
+                className="flex items-center gap-x-4 border border-zinc-400 p-3 rounded-tr-xl rounded-bl-xl hover:border-github hover:text-github text-light-200"
               >
                 <FaGithub className="size-6" />
                 <span>Github</span>
@@ -32,7 +32,7 @@ export function Footer() {
 
               <LinkIcon 
                 path="mailto:caio.rllcr@gmail.com"
-                className="flex items-center gap-x-4 border border-zinc-400 p-2 rounded-tr-xl rounded-bl-xl hover:border-gmail hover:text-gmail text-light-200"
+                className="flex items-center gap-x-4 border border-zinc-400 p-3 rounded-tr-xl rounded-bl-xl hover:border-gmail hover:text-gmail text-light-200"
               >
                 <BiLogoGmail className="size-6" />
                 <span>Email</span>
@@ -40,7 +40,7 @@ export function Footer() {
 
               <LinkIcon 
                 path="https://wa.me/5521980891793"
-                className="flex items-center gap-x-4 border border-zinc-400 p-2 rounded-tr-xl rounded-bl-xl hover:border-whatsapp hover:text-whatsapp text-light-200"
+                className="flex items-center gap-x-4 border border-zinc-400 p-3 rounded-tr-xl rounded-bl-xl hover:border-whatsapp hover:text-whatsapp text-light-200"
               >
                 <FaWhatsapp className="size-6" />
                 <span>Whatsapp</span>

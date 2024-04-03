@@ -1,3 +1,4 @@
+import { Toaster } from 'sonner';
 import { Footer } from '../components/Footer';
 import { Menu } from "../components/Menu";
 import { AboutMeSection } from "./AboutMeSection";
@@ -28,6 +29,7 @@ export default function Page() {
           <ContactSection />
         </article>
       </main>
+      <Toaster richColors/>
       <Footer />
     </>
   );
