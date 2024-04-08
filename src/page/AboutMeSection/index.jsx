@@ -21,23 +21,23 @@ export function AboutMeSection() {
           <p className="leading-relaxed tracking-wider dark:text-light-200">
             Sou recém-formado em Análise e Desenvolvimento de Sistemas com
             experiência em desenvolvimento de APIs Rest (
-            <span className="font-bold dark:text-orange-700">
+            <span className="font-bold dark:text-orange-600">
               Java
             </span>
             ,{" "}
-            <span className="font-bold dark:text-orange-700">
+            <span className="font-bold dark:text-orange-600">
               Spring Boot
             </span>
             ) e interfaces interativas (
-            <span className="font-bold dark:text-orange-700">
+            <span className="font-bold dark:text-orange-600">
               React
             </span>
             ,{" "}
-            <span className="font-bold dark:text-orange-700">
+            <span className="font-bold dark:text-orange-600">
               JavaScript
             </span>
             ,{" "}
-            <span className="font-bold dark:text-orange-700">
+            <span className="font-bold dark:text-orange-600">
               TypeScript
             </span>
             ).

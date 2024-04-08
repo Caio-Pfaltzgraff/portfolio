@@ -50,7 +50,7 @@
     "level": "Intermediário"
   },
   {
-    "icon": "/icons/postges-icon.png",
+    "icon": "/icons/postgres-icon.png",
     "name": "Postgres",
     "level": "Avançado"
   },
