@@ -13,7 +13,7 @@ export function PresentationSection() {
 
     if (
       currentMonth < birthdayMonth ||
-      (currentMonth === birthdayMonth && today.getDay() <= birthday.getDay())
+      (currentMonth === birthdayMonth && today.getDay() >= birthday.getDay())
     ) {
       age--;
     }
