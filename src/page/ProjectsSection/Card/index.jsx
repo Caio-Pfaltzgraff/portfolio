@@ -1,8 +1,7 @@
+import { Tooltip } from "@nextui-org/react";
 import { CiGlobe } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
 import { TbApi } from "react-icons/tb";
-import { Tooltip } from "react-tippy";
-import "react-tippy/dist/tippy.css";
 
 export function Card({image, title, description, techs, github, deploy}) {
   return (
@@ -30,12 +29,19 @@ export function Card({image, title, description, techs, github, deploy}) {
       <div className="flex flex-wrap gap-x-3 gap-y-4 text-gray-600 dark:text-white mb-2">
         {techs.map((tech => (
           <Tooltip
-          title={tech.name}
-          interactive={true}
-          arrow={true}
-          animation="perspective"
-          key={tech.name}
-        >
+            content={tech.name}
+            showArrow={true}
+            key={tech.name}
+            classNames={{
+              base: [
+                "before:bg-dark-100 dark:before:bg-zinc-700"
+              ],
+              content: [
+                "px-4 py-2 shadow-xl",
+                "text-white bg-dark-100 dark:bg-zinc-700"
+              ]
+            }}
+          >
           <img src={tech.image} className="size-8"/>
         </Tooltip>
         )))}

@@ -1,7 +1,6 @@
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaReact, FaWhatsapp } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
-import { Tooltip } from "react-tippy";
 import { LinkIcon } from '/src/components/LinkIcon.jsx';
 
 export function Footer() {
@@ -50,32 +49,19 @@ export function Footer() {
 
           <div className="h-[2px] rounded-full bg-orange-700"/>
 
-          <div className="text-light-200 space-y-4">
-            <p className="text-center text-sm">
+          <div className="space-y-4">
+            <p className="text-center text-sm text-light-200 ">
               © Copyright {year} | Todos os direitos reservados.
             </p>
-            <div className="flex sm:justify-center items-center gap-x-2 text-center text-sm">
-              <p>
-                Desenvolvido por Caio Pfaltzgraff utilizando{" "}
-                <span className="sm:hidden">React com Javascript.</span>
+            <div className="flex flex-col sm:flex-row sm:justify-center gap-x-2 gap-y-3">
+              <p className="text-center text-sm text-light-200 ">
+                Desenvolvido por Caio Pfaltzgraff utilizando
               </p>
-              <Tooltip
-                title="React"
-                interactive={true}
-                arrow={true}
-                animation="perspective"
-              >
-                <FaReact className="size-6 -mt-1 text-cyan-700 hidden sm:block" />
-              </Tooltip>
-              <span className="hidden sm:block">com</span>
-              <Tooltip
-                title="Javascript"
-                interactive={true}
-                arrow={true}
-                animation="perspective"
-              >
-                <RiJavascriptFill className="size-6 -mt-1 text-yellow-500 hidden sm:block" />
-              </Tooltip>
+              <div className="flex justify-center gap-2">
+                <FaReact className="size-6 -mt-1 text-cyan-700" />
+                <span className="text-sm text-light-200">com</span>
+                <RiJavascriptFill className="size-6 -mt-1 text-yellow-500" />
+              </div>
             </div>
           </div>
         </div>
