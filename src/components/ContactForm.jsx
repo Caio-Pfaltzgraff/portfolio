@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@nextui-org/react";
 import { Controller, useForm } from "react-hook-form";
 import { BsSendFill } from "react-icons/bs";
 import { toast } from "sonner";
@@ -119,12 +119,16 @@ export function ContactForm() {
           />
         </div>
 
-        <button 
+        <Button
           type="submit"
-          className="flex justify-center items-center gap-2 px-5 py-2 bg-orange-700 hover:bg-orange-600 text-light-200 font-semibold text-lg rounded-lg"
+          radius="sm"
+          endContent={
+            <BsSendFill />
+          }
+          className="bg-orange-700 text-white text-base font-semibold tracking-wide"
         >
-          Enviar <BsSendFill />
-        </button>
+          Enviar
+        </Button>
       </form>
     </>
   )

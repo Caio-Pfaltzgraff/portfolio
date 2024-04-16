@@ -1,5 +1,5 @@
+import { CiGlobe } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
-import { RiExternalLinkFill } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 import { Tooltip } from "react-tippy";
 import "react-tippy/dist/tippy.css";
@@ -45,16 +45,16 @@ export function Card({image, title, description, techs, github, deploy}) {
         <a 
           href={github}
           target="_blank"
-          className="flex gap-2 items-center border-2 border-orange-700 rounded-2xl py-2 px-8 text-sm dark:text-light-200 hover:text-orange-700 hover:scale-105 duration-500 dark:hover:text-orange-700 tracking-wider"
+          className="flex justify-center items-center gap-1.5 border-2 border-orange-700 dark:border-orange-600 rounded-full px-5 py-2 text-sm text-orange-700 dark:text-orange-600 tracking-wider hover:bg-orange-700 hover:dark:bg-orange-600 hover:text-white dark:hover:text-white duration-400"
         >
-          Github <FaGithub className="text-lg"/>
+          Github <FaGithub className="size-5"/>
         </a>
         {deploy && <a 
           href={deploy}
           target="_blank"
-          className="flex gap-2 items-center border-2 border-orange-700 rounded-2xl py-2 px-8 text-sm dark:text-light-200 hover:text-orange-700 hover:scale-105 duration-500 dark:hover:text-orange-700 tracking-wider"
+          className="flex justify-center items-center gap-1.5 border-2 border-orange-700 dark:border-orange-600 rounded-full px-5 py-2 text-sm text-orange-700 dark:text-orange-600 tracking-wider hover:bg-orange-700 hover:dark:bg-orange-600 hover:text-white dark:hover:text-white duration-400"
         >
-          Site <RiExternalLinkFill className="text-lg"/>
+          Site <CiGlobe className="size-5"/>
         </a>}
       </div>
     </div>

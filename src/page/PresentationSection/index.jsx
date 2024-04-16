@@ -1,3 +1,4 @@
+import { Button } from "@nextui-org/react";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { HiDocumentArrowDown } from "react-icons/hi2";
@@ -29,7 +30,7 @@ export function PresentationSection() {
           <div className="flex justify-center">
             <h1 className="font-extrabold text-[12vw] sm:text-[2.5rem] md:text-[5.5rem] xl:text-8xl leading-tight text-center text-slate-800 dark:text-light-100 z-10">
               {"Seu próximo desenvolvedor "}{" "}
-              <span className="bg-gradient-to-r from-blue-700 via-pink-700 to-orange-700 inline-block text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-blue-700 dark:from-blue-600 via-pink-700 dark:via-pink-600 to-orange-700 dark:to-orange-600 inline-block text-transparent bg-clip-text">
                 Fullstack
               </span>
             </h1>
@@ -71,10 +72,17 @@ export function PresentationSection() {
             <a
               href="https://drive.google.com/file/d/1bWyYBRH8pBoa2A726nDRuz2MuPOWmrvP/view?usp=sharing"
               target="_blank"
-              className="bg-orange-700 hover:bg-orange-600 text-lg p-3 lg:px-10 lg:py-4 rounded-lg text-light-100 font-bold flex items-center transition-colors duration-700 border-none outline-none"
             >
-              Download CV{" "}
-              <HiDocumentArrowDown className="h-6 w-6 ml-2 animate-bounce" />
+              <Button 
+                size="lg"
+                radius="sm"
+                className="bg-orange-700 text-white font-semibold tracking-wide text-lg"
+                endContent={
+                  <HiDocumentArrowDown className="size-6 animate-bounce" />
+                }
+              >
+                Dowload CV
+              </Button>
             </a>
           </div>
 
