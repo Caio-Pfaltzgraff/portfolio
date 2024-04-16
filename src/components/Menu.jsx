@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
+import { Link as LinkNav } from 'react-scroll';
 import { ToggleTheme } from './ToggleTheme';
 
 export function Menu() {
@@ -24,24 +25,90 @@ export function Menu() {
         </div>
 
         <div className='hidden md:flex gap-x-4'>
-          <a href="#" className="nav-link">Início</a>
-          <a href="#aboutme" className="nav-link">Sobre mim</a>
-          <a href="#skills" className="nav-link">Habilidades</a>
-          <a href="#projects" className="nav-link">Projetos</a>
-          <a href="#achievements" className="nav-link">Conquistas</a>
-          <a href="#contact" className="nav-link">Contato</a>
+          <LinkNav className="nav-link" activeClass='nav-link-active' smooth spy to='start' offset={-100}>
+            Início
+          </LinkNav>
+          <LinkNav className="nav-link" activeClass='nav-link-active' smooth spy to='aboutme' offset={-100}>
+            Sobre mim
+          </LinkNav>
+          <LinkNav className="nav-link" activeClass='nav-link-active' smooth spy to='skills' offset={-100}>
+            Habilidades
+          </LinkNav>
+          <LinkNav className="nav-link" activeClass='nav-link-active' smooth spy to='projects' offset={-100}>
+            Projetos
+          </LinkNav>
+          <LinkNav className="nav-link" activeClass='nav-link-active' smooth spy to='achievements' offset={-100}>
+            Conquistas
+          </LinkNav>
+          <LinkNav className="nav-link" activeClass='nav-link-active' smooth spy to='contact' offset={-100}>
+            Contato
+          </LinkNav>
           <ToggleTheme />
         </div>
       </div>
       {menuOpen && (
         <div className='h-screen w-full absolute md:hidden bg-azul-escuro dark:bg-dark-100'>
           <div className='flex flex-col justify-center items-center h-full gap-y-8'>
-            <a href="#" className="nav-link-mobile" onClick={handlerToggleMenu}>Início</a>
-            <a href="#aboutme" className="nav-link-mobile" onClick={handlerToggleMenu}>Sobre mim</a>
-            <a href="#skills" className="nav-link-mobile" onClick={handlerToggleMenu}>Habilidades</a>
-            <a href="#projects" className="nav-link-mobile" onClick={handlerToggleMenu}>Projetos</a>
-            <a href="#achievements" className="nav-link-mobile" onClick={handlerToggleMenu}>Conquistas</a>
-            <a href="#contact" className="nav-link-mobile" onClick={handlerToggleMenu}>Contato</a>
+          <LinkNav 
+            className="nav-link-mobile" 
+            activeClass='nav-link-mobile-active' 
+            smooth spy 
+            to='start'
+            onClick={handlerToggleMenu}
+            offset={-64}
+          >
+            Início
+          </LinkNav>
+          <LinkNav 
+            className="nav-link-mobile" 
+            activeClass='nav-link-mobile-active' 
+            smooth spy 
+            to='aboutme'
+            onClick={handlerToggleMenu}
+            offset={-64}
+          >
+            Sobre mim
+          </LinkNav>
+          <LinkNav 
+            className="nav-link-mobile" 
+            activeClass='nav-link-mobile-active' 
+            smooth spy 
+            to='skills'
+            onClick={handlerToggleMenu}
+            offset={-64}
+          >
+            Habilidades
+          </LinkNav>
+          <LinkNav 
+            className="nav-link-mobile" 
+            activeClass='nav-link-mobile-active' 
+            smooth spy 
+            to='projects'
+            onClick={handlerToggleMenu}
+            offset={-64}
+          >
+            Projetos
+          </LinkNav>
+          <LinkNav 
+            className="nav-link-mobile" 
+            activeClass='nav-link-mobile-active' 
+            smooth spy 
+            to='achievements'
+            onClick={handlerToggleMenu}
+            offset={-64}
+          >
+            Conquistas
+          </LinkNav>
+          <LinkNav 
+            className="nav-link-mobile" 
+            activeClass='nav-link-mobile-active' 
+            smooth spy 
+            to='contact'
+            onClick={handlerToggleMenu}
+            offset={-64}
+          >
+            Contato
+          </LinkNav>
           </div>
         </div>
       )}

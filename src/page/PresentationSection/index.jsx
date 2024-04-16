@@ -23,7 +23,7 @@ export function PresentationSection() {
   }
 
   return (
-    <section>
+    <section id="start">
       <div className="flex items-center sm:max-w-[90%] md:max-w-screen-xl mx-auto h-screen padding-page">
         <div className="grid gap-y-6 md:gap-y-8">
           
