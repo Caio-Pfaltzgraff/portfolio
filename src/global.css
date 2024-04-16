@@ -6,6 +6,22 @@
   body {
     @apply font-default
   }
+
+  ::-webkit-scrollbar {
+    @apply w-2.5
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-100
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-zinc-700 rounded-xl
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-600
+  }
 }
 
 @layer components {
@@ -19,14 +35,6 @@
 
   .nav-link-mobile {
     @apply text-light-100 font-semibold text-2xl text-center block
-  }
-
-  .input-form {
-    @apply outline-none border-2 leading-8 px-4 py-2 rounded-lg focus:border-azul-escuro dark:focus:border-orange-700 w-full
-  }
-
-  .input-form-invalid {
-    @apply border-red-600 focus:border-red-600
   }
 
 }

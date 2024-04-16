@@ -1,20 +1,29 @@
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { Input, Textarea } from "@nextui-org/react";
+import { Controller, useForm } from "react-hook-form";
 import { BsSendFill } from "react-icons/bs";
 import { toast } from "sonner";
 import { z } from "zod";
 
 const schema = z.object({
-  name: z.string().min(3, {message: "O nome deve ter no mínimo 3 caracteres"}),
-  email: z.string().min(1, {message: "O email é obrigatório"}).email({message: "Digite um email válido"}),
-  subject: z.string().min(5, {message: "O assunto deve ter no mínimo 5 caracteres"}),
-  message: z.string().min(10, {message: "A mensagem deve ter no mínimo 10 caracteres"}),
+  name: z.string({ required_error: "O nome é obrigatório." }).min(3, {message: "O nome deve ter no mínimo 3 caracteres"}),
+  email: z.string({ required_error: "O email é obrigatório." }).email({message: "Digite um email válido"}),
+  subject: z.string({ required_error: "O assunto é obrigatório." }).min(5, {message: "O assunto deve ter no mínimo 5 caracteres"}),
+  message: z.string({ required_error: "A mensagem é obrigatória." }).min(10, {message: "A mensagem deve ter no mínimo 10 caracteres"}),
 })
 
 export function ContactForm() {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
-    resolver: zodResolver(schema)
+  const { handleSubmit, formState: { errors }, reset, control } = useForm({
+    mode: "all",
+    criteriaMode: "all",
+    resolver: zodResolver(schema),
+    defaultValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    }
   });
 
   function handleSendEmail(data) {
@@ -40,39 +49,74 @@ export function ContactForm() {
     <>
       <form onSubmit={handleSubmit(handleSendEmail)} className="flex flex-col gap-y-6">
         <div>
-          <input 
-            {...register('name')}
-            className={`input-form ${errors.name && 'input-form-invalid'}`}
-            placeholder="Nome"
+          <Controller 
+            name="name"
+            control={control}
+            render={({ field }) => (
+              <Input 
+                {...field}
+                label="Nome"
+                variant="faded"
+                isRequired
+                isInvalid={errors.name && true}
+                errorMessage={errors.name?.message}
+              />
+            )}
           />
-          {errors.name && <small className="text-red-600 font-medium">{errors.name.message}</small>}
         </div>
 
         <div>
-          <input 
-            {...register('email')}
-            className={`input-form ${errors.email && 'input-form-invalid'}`}
-            placeholder="Email" 
+          <Controller 
+            name="email"
+            control={control}
+            render={({ field }) => (
+              <Input 
+                {...field}
+                label="E-mail"
+                variant="faded"
+                isRequired
+                isInvalid={errors.email && true}
+                errorMessage={errors.email?.message}
+              />
+            )}
           />
-          {errors.email && <small className="text-red-600 font-medium">{errors.email.message}</small>}
         </div>
 
         <div>
-          <input 
-            {...register('subject')}
-            className={`input-form ${errors.subject && 'input-form-invalid'}`}
-            placeholder="Assunto" 
+          <Controller 
+            name="subject"
+            control={control}
+            render={({ field }) => (
+              <Input 
+                {...field}
+                label="Assunto"
+                variant="faded"
+                isRequired
+                isInvalid={errors.subject && true}
+                errorMessage={errors.subject?.message}
+              />
+            )}
           />
-          {errors.subject && <small className="text-red-600 font-medium">{errors.subject.message}</small>}
         </div>
 
         <div>
-          <textarea 
-            {...register('message')}
-            className={`input-form h-36 md:h-28 resize-y ${errors.message && 'input-form-invalid'}`}
-            placeholder="Mensagem"
+          <Controller 
+            name="message"
+            control={control}
+            render={({ field }) => (
+              <Textarea 
+                {...field}
+                label="Mensagem"
+                variant="faded"
+                placeholder="Digite sua mensagem..."
+                isRequired
+                disableAutosize
+                isInvalid={errors.message && true}
+                errorMessage={errors.message?.message}
+                classNames={{input: "resize-y min-h-[70px]"}}
+              />
+            )}
           />
-          {errors.message && <small className="text-red-600 font-medium">{errors.message.message}</small>}
         </div>
 
         <button 
