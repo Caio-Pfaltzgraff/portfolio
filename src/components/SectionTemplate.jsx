@@ -12,11 +12,12 @@ export function SectionTemplate({ children, title, id }) {
 
 function Title({ content }) {
   return (
-    <div className="grid gap-y-2 justify-center items-center text-center pb-10 md:pb-12 lg:pb-14">
-      <h2 className="text-3xl lg:text-4xl font-title font-bold dark:text-light-100">
+    <div className="flex justify-center py-10">  
+      <div 
+        className="text-3xl lg:text-4xl font-title border-b-4 border-b-orange-600 rounded w-fit dark:text-light-100 font-bold px-4 pb-1"
+      >
         {content}
-      </h2>
-      <div className="w-48 lg:w-56 h-1 rounded-full bg-orange-700" />
+      </div>
     </div>
   );
 }
