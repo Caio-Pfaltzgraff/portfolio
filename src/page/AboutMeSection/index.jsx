@@ -19,40 +19,29 @@ export function AboutMeSection() {
 
         <div className="flex flex-col items-center justify-center gap-y-4 lg:gap-y-8">
           <p className="leading-relaxed tracking-wider dark:text-light-200">
-            Sou recém-formado em Análise e Desenvolvimento de Sistemas com
-            experiência em desenvolvimento de APIs Rest (
-            <span className="font-bold dark:text-orange-600">
-              Java
-            </span>
-            ,{" "}
-            <span className="font-bold dark:text-orange-600">
-              Spring Boot
-            </span>
-            ) e interfaces interativas (
-            <span className="font-bold dark:text-orange-600">
-              React
-            </span>
-            ,{" "}
-            <span className="font-bold dark:text-orange-600">
-              JavaScript
-            </span>
-            ,{" "}
-            <span className="font-bold dark:text-orange-600">
-              TypeScript
-            </span>
+            Recém-graduado em Análise e Desenvolvimento de Sistemas, com
+            experiência em APIs REST (
+            <span className="font-bold dark:text-orange-600">Java</span>,{" "}
+            <span className="font-bold dark:text-orange-600">Spring Boot</span>,{" "}
+            <span className="font-bold dark:text-orange-600">Node.js</span>,{" "}
+            <span className="font-bold dark:text-orange-600">Express</span>) e
+            interfaces interativas (
+            <span className="font-bold dark:text-orange-600">React</span>,{" "}
+            <span className="font-bold dark:text-orange-600">JavaScript</span>,{" "}
+            <span className="font-bold dark:text-orange-600">TypeScript</span>
             ).
           </p>
 
           <p className="leading-relaxed tracking-wider dark:text-light-200">
-            Além das habilidades técnicas, trabalho minhas habilidades
-            comportamentais, como comunicação, organização e
-            proatividade, características que me fazem ser um dev versátil.
+            Além das habilidades técnicas, sou comunicativo, organizado e
+            proativo, o que me torna um desenvolvedor versátil e sempre em busca
+            de aprendizado.
           </p>
 
           <p className="leading-relaxed tracking-wider dark:text-light-200">
-            Estou atualmente em busca da minha primeira oportunidade como
-            desenvolvedor web full-stack Jr, ansioso para aplicar e ampliar
-            minhas habilidades em um ambiente desafiador.
+            Estou buscando minha primeira oportunidade como Desenvolvedor Web,
+            ansioso para aplicar e expandir minhas habilidades em um ambiente
+            desafiador.
           </p>
         </div>
       </div>

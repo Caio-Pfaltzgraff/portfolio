@@ -27,7 +27,7 @@
   {
     "icon": "/icons/node-icon.png",
     "name": "Node.JS",
-    "level": "Básico"
+    "level": "Intermediário"
   },
   {
     "icon": "/icons/vite-icon.png",
@@ -36,8 +36,13 @@
   },
   {
     "icon": "/icons/nextjs-icon.png",
-    "name": "NextJS",
-    "level": "Básico"
+    "name": "Next.JS",
+    "level": "Intermediário"
+  },
+  {
+    "icon": "/icons/express-icon.png",
+    "name": "Express.JS",
+    "level": "Intermediário"
   },
   {
     "icon": "/icons/docker-icon.png",
